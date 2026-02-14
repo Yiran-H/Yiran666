@@ -1,0 +1,294 @@
+/* ─────────────────────────────────────────
+   components.css — nav, buttons, tags, cards
+   ───────────────────────────────────────── */
+
+/* ─── NAV ─── */
+nav {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+  border-bottom: 1px solid transparent;
+  transition: all 0.4s ease;
+}
+
+nav.scrolled {
+  background: rgba(8, 12, 16, 0.88);
+  border-bottom-color: var(--border);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+}
+
+.nav-logo {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 1.05rem;
+  color: var(--accent);
+  letter-spacing: 0.05em;
+  text-decoration: none;
+}
+
+.nav-links {
+  display: flex;
+  gap: 36px;
+  list-style: none;
+}
+
+.nav-links a {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--muted);
+  text-decoration: none;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  transition: color 0.25s;
+  position: relative;
+}
+
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  bottom: -4px; left: 0;
+  width: 0; height: 1px;
+  background: var(--accent);
+  transition: width 0.3s ease;
+}
+
+.nav-links a:hover { color: var(--accent); }
+.nav-links a:hover::after { width: 100%; }
+
+.nav-mobile-toggle {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+}
+
+.nav-mobile-toggle span {
+  display: block;
+  width: 22px;
+  height: 1.5px;
+  background: var(--muted);
+  transition: all 0.3s;
+}
+
+/* ─── BUTTONS ─── */
+.btn {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 13px 28px;
+  border-radius: 3px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  display: inline-block;
+  border: none;
+}
+
+.btn-primary {
+  background: var(--accent);
+  color: var(--bg);
+  border: 1px solid var(--accent);
+}
+
+.btn-primary:hover {
+  background: transparent;
+  color: var(--accent);
+  box-shadow: 0 0 20px rgba(0, 212, 255, 0.25);
+}
+
+.btn-outline {
+  background: transparent;
+  color: var(--text);
+  border: 1px solid var(--dim);
+}
+
+.btn-outline:hover {
+  border-color: var(--text);
+  color: var(--text);
+}
+
+/* ─── TAGS ─── */
+.tag {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  padding: 5px 14px;
+  border: 1px solid var(--border);
+  border-radius: 2px;
+  color: var(--muted);
+  letter-spacing: 0.05em;
+  transition: all 0.25s;
+  cursor: default;
+}
+
+.tag:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+  background: rgba(0, 212, 255, 0.06);
+}
+
+/* ─── NEWS BADGES ─── */
+.news-badge {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: 0.6rem;
+  padding: 2px 8px;
+  border-radius: 2px;
+  margin-right: 8px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.badge-paper  { background: rgba(123,97,255,0.15); color: var(--accent2); border: 1px solid rgba(123,97,255,0.3); }
+.badge-award  { background: rgba(240,192,96,0.10); color: var(--gold);    border: 1px solid rgba(240,192,96,0.3); }
+.badge-talk   { background: rgba(0,212,255,0.08);  color: var(--accent);  border: 1px solid rgba(0,212,255,0.25); }
+.badge-misc   { background: rgba(100,116,139,0.12);color: var(--muted);   border: 1px solid var(--border); }
+
+/* ─── SIDEBAR BLOCKS ─── */
+.sidebar-block {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 24px;
+  margin-bottom: 20px;
+}
+
+.sidebar-title {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  color: var(--muted);
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+
+/* ─── INTEREST LIST ─── */
+.interest-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 7px 0;
+  font-size: 0.88rem;
+  color: #94a3b8;
+  border-bottom: 1px solid var(--border);
+}
+
+.interest-item:last-child { border-bottom: none; }
+
+.interest-dot {
+  width: 5px; height: 5px;
+  border-radius: 50%;
+  background: var(--accent);
+  flex-shrink: 0;
+}
+
+/* ─── CONTACT INFO ─── */
+.contact-info {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--muted);
+  line-height: 2;
+}
+
+.contact-info .highlight { color: var(--text); }
+
+/* ─── SOCIAL LINKS ─── */
+.social-links {
+  display: flex;
+  gap: 10px;
+}
+
+.social-link {
+  width: 38px; height: 38px;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--muted);
+  text-decoration: none;
+  transition: all 0.25s;
+}
+
+.social-link:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+  background: rgba(0, 212, 255, 0.08);
+}
+
+/* ─── PUB LINKS ─── */
+.pub-link {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  padding: 4px 12px;
+  border: 1px solid var(--dim);
+  border-radius: 2px;
+  color: var(--muted);
+  text-decoration: none;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  transition: all 0.2s;
+}
+
+.pub-link:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+/* ─── FILTER BUTTONS ─── */
+.filter-btn {
+  font-family: var(--font-mono);
+  font-size: 0.66rem;
+  padding: 6px 16px;
+  border: 1px solid var(--border);
+  background: transparent;
+  color: var(--muted);
+  border-radius: 2px;
+  cursor: pointer;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  transition: all 0.2s;
+}
+
+.filter-btn.active,
+.filter-btn:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+  background: rgba(0, 212, 255, 0.06);
+}
+
+/* ─── RESPONSIVE NAV ─── */
+@media (max-width: 900px) {
+  nav { padding: 18px 24px; }
+  .nav-links { gap: 20px; }
+  .nav-mobile-toggle { display: flex; }
+
+  .nav-links {
+    position: fixed;
+    top: 60px; left: 0; right: 0;
+    background: rgba(8,12,16,0.96);
+    border-bottom: 1px solid var(--border);
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+    padding: 20px 0;
+    transform: translateY(-110%);
+    transition: transform 0.35s ease;
+    backdrop-filter: blur(18px);
+  }
+
+  .nav-links.open {
+    transform: translateY(0);
+  }
+
+  .nav-links li { width: 100%; text-align: center; }
+  .nav-links a  { display: block; padding: 14px 0; }
+}

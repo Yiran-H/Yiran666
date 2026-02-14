@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Your Name — Ph.D. Candidate in Computer Science at University Name. Research in AI, NLP, and Machine Learning.">
+  <meta property="og:title" content="Your Name · AI Researcher">
+  <meta property="og:description" content="Ph.D. Candidate working on LLMs, AI Safety, and NLP.">
+  <title>Your Name — AI Researcher</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Mono:ital,wght@0,300;0,400;1,300&family=Lora:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/sections.css">
+</head>
+<body>
+
+  <canvas id="bg-canvas"></canvas>
+
+  <div class="content">
+
+    <!-- ─── NAV ─── -->
+    <nav id="navbar">
+      <a href="#hero" class="nav-logo">YN.phd</a>
+      <ul class="nav-links">
+        <li><a href="#news">News</a></li>
+        <li><a href="#publications">Publications</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#cv">CV</a></li>
+      </ul>
+      <button class="nav-mobile-toggle" id="mobile-toggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+
+    <!-- ─── HERO ─── -->
+    <section id="hero">
+      <div class="hero-inner">
+        <div class="hero-text">
+          <div class="hero-eyebrow">Ph.D. Candidate</div>
+          <h1 class="hero-name">Your Name</h1>
+          <div class="hero-title">
+            <span>AI Research Lab</span> · University Name
+          </div>
+          <p class="hero-bio">
+            I work at the intersection of <em>machine learning</em>, <em>natural language processing</em>,
+            and <em>human-computer interaction</em>. My research focuses on building intelligent systems
+            that are safe, interpretable, and genuinely useful.
+          </p>
+          <div class="hero-tags">
+            <span class="tag">Large Language Models</span>
+            <span class="tag">Reinforcement Learning</span>
+            <span class="tag">AI Safety</span>
+            <span class="tag">NLP</span>
+            <span class="tag">Interpretability</span>
+          </div>
+          <div class="hero-cta">
+            <a href="mailto:yourname@university.edu" class="btn btn-primary">Contact Me</a>
+            <a href="#publications" class="btn btn-outline">View Research</a>
+          </div>
+        </div>
+
+        <div class="hero-avatar-wrap">
+          <div class="avatar-card">
+            <div class="avatar-ring"></div>
+            <div class="avatar-img">
+              <!-- Replace with: <img src="assets/img/profile.jpg" alt="Your Name"> -->
+              <div class="avatar-placeholder">
+                <span class="avatar-initials">YN</span>
+              </div>
+            </div>
+          </div>
+          <div class="affiliation-badge">
+            <div class="affil-uni"><span class="affil-dot"></span>University Name</div>
+            <div class="affil-dept">Dept. of Computer Science</div>
+          </div>
+          <div class="social-links">
+            <a href="#" class="social-link" title="Google Scholar">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+            </a>
+            <a href="https://github.com/yourusername" class="social-link" title="GitHub">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+            </a>
+            <a href="https://twitter.com/yourusername" class="social-link" title="Twitter/X">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/></svg>
+            </a>
+            <a href="https://linkedin.com/in/yourusername" class="social-link" title="LinkedIn">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            </a>
+            <a href="mailto:yourname@university.edu" class="social-link" title="Email">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── NEWS ─── -->
+    <section id="news">
+      <div class="section-header reveal">
+        <div class="section-label">Latest</div>
+        <h2 class="section-title">News & Updates</h2>
+      </div>
+      <div class="news-list" id="news-list">
+        <!-- Populated by data/news.js -->
+      </div>
+    </section>
+
+    <!-- ─── PUBLICATIONS ─── -->
+    <section id="publications">
+      <div class="section-header reveal">
+        <div class="section-label">Research</div>
+        <h2 class="section-title">Selected Publications</h2>
+      </div>
+      <div class="pub-filter reveal" id="pub-filter">
+        <button class="filter-btn active" data-topic="all">All</button>
+        <button class="filter-btn" data-topic="llm">LLMs</button>
+        <button class="filter-btn" data-topic="safety">AI Safety</button>
+        <button class="filter-btn" data-topic="nlp">NLP</button>
+      </div>
+      <div class="pub-list" id="pub-list">
+        <!-- Populated by data/publications.js -->
+      </div>
+    </section>
+
+    <!-- ─── ABOUT ─── -->
+    <section id="about">
+      <div class="section-header reveal">
+        <div class="section-label">About</div>
+        <h2 class="section-title">A Bit About Me</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p>
+            I am a Ph.D. candidate in Computer Science at <strong>University Name</strong>, advised by
+            <strong>Prof. Advisor Name</strong>. My research sits at the intersection of
+            <em>machine learning</em> and <em>natural language processing</em>, with a focus on
+            making large language models more reliable, interpretable, and aligned with human values.
+          </p>
+          <p>
+            Before my Ph.D., I completed my B.Sc. in Computer Science at <strong>Undergraduate University</strong>,
+            where I graduated with highest honors. I have also spent time as a research intern at
+            <strong>Google DeepMind</strong> and <strong>Microsoft Research</strong>.
+          </p>
+          <p>
+            Outside of research, I enjoy hiking, specialty coffee, and contributing to open-source
+            machine learning tools. I'm always happy to chat about research, collaborations, or anything
+            AI-related — feel free to reach out.
+          </p>
+          <div class="edu-list" id="edu-list">
+            <!-- Populated by data/profile.js -->
+          </div>
+        </div>
+        <div class="reveal">
+          <div class="sidebar-block">
+            <div class="sidebar-title">Research Interests</div>
+            <div id="interests-list"></div>
+          </div>
+          <div class="sidebar-block">
+            <div class="sidebar-title">Contact</div>
+            <div class="contact-info" id="contact-info"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── CV ─── -->
+    <section id="cv">
+      <div class="section-header reveal">
+        <div class="section-label">Curriculum Vitae</div>
+        <h2 class="section-title">Download My CV</h2>
+      </div>
+      <div class="cv-download-card reveal">
+        <div class="cv-info">
+          <h3>Your Name — CV</h3>
+          <p>Full academic curriculum vitae including publications, talks, teaching, and service.</p>
+          <div class="cv-meta">Last updated · January 2025 · PDF · ~2 pages</div>
+          <div style="margin-top:24px;display:flex;gap:12px;flex-wrap:wrap;">
+            <a href="assets/cv.pdf" class="btn btn-primary" download>Download PDF</a>
+            <a href="assets/cv.pdf" class="btn btn-outline" target="_blank">View Online</a>
+          </div>
+        </div>
+        <div class="cv-icon">📄</div>
+      </div>
+    </section>
+
+    <footer>
+      <span>© 2025 Your Name · Built with intention</span>
+      <span style="display:flex;gap:24px;">
+        <a href="mailto:yourname@university.edu">Email</a>
+        <a href="#">Google Scholar</a>
+        <a href="#">GitHub</a>
+      </span>
+    </footer>
+
+  </div><!-- /.content -->
+
+  <!-- Data files (edit these to update content) -->
+  <script src="data/profile.js"></script>
+  <script src="data/news.js"></script>
+  <script src="data/publications.js"></script>
+
+  <!-- App logic -->
+  <script src="js/canvas.js"></script>
+  <script src="js/app.js"></script>
+
+</body>
+</html>
