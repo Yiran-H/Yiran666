@@ -25,7 +25,7 @@ const NEWS = [
   {
     date: "Sep 2024",
     type: "conference",
-    html: `Presented our poster at the SEG International Exposition and Annual Meeting 2024 in Houston.`,
+    html: `Presented our paper at the SEG International Exposition and Annual Meeting 2024 in Houston.`,
   },
 ];
 
@@ -34,8 +34,8 @@ document.addEventListener("DOMContentLoaded", () => {
   const list = document.getElementById("news-list");
   if (!list) return;
 
-  const badgeClass = { mil: "badge-milestone", paper: "badge-paper", award: "badge-award", talk: "badge-talk", conference: "badge-misc" };
-  const badgeLabel = { mil: "Milestone", paper: "Paper", award: "Award", talk: "Talk", conference: "News" };
+  const badgeClass = { conference: "badge-conference", mil: "badge-milestone", paper: "badge-paper", award: "badge-award", talk: "badge-talk"};
+  const badgeLabel = { conference: "Conference", mil: "Milestone", paper: "Paper", award: "Award", talk: "Talk"};
 
   list.innerHTML = NEWS.map(item => `
     <div class="news-item reveal">
