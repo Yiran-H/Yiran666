@@ -10,6 +10,28 @@
 
 const PUBLICATIONS = [
   {
+    venue:   "Under Review",
+    title:   "RGE-GCN: Recursive Gene Elimination with Graph Convolutional Networks for RNA-seq based Early Cancer Detection",
+    authors: [{ name: "Shreyas Shende"}, { name: "Varsha Narayanan"}, { name: "Vishal Fenn"}, { name: "Yiran Huang", isMe: true }, { name: "Dincer Goksuluk"}, { name: "Gaurav Choudhary"}, { name: "Melih Agraz"}, { name: "Mengjia Xu"}],
+    topics:  ["GNNs", "Differentially Expressed Genes (DEGs)", "RNA-Sequence", "Integrated Gradients (IG)"],
+    award:   "",
+    links: [
+      { label: "Paper", url: "https://arxiv.org/pdf/2512.04333" },
+      { label: "Code",  url: "#" },
+    ],
+  },
+  {
+    venue:   "Under Review",
+    title:   "Hyperbolic large language models",
+    authors: [{ name: "Sarang Patil"}, { name: "Zeyong Zhang"}, { name: "Yiran Huang", isMe: true }, { name: "Tengfei Ma"}, { name: "Mengjia Xu"}],
+    topics:  ["llm", "Survey"],
+    award:   "",
+    links: [
+      { label: "Paper", url: "https://arxiv.org/pdf/2509.05757?" },
+      { label: "Code",  url: "#" },
+    ],
+  },
+  {
     venue:   "MIDL 2026",
     title:   "BrainATCL: Adaptive Temporal Brain Connectivity Learning for Functional Link Prediction and Age Estimation",
     authors: [{ name: "Yiran Huang", isMe: true }, { name: "Amirhossein Nouranizadeh" }, { name: "Christine Ahrends" }, { name: "Mengjia Xu" }],
@@ -56,28 +78,6 @@ const PUBLICATIONS = [
       { label: "Paper", url: "https://openreview.net/pdf?id=sMlYbFKKSb" },
       { label: "Code",  url: "#" },
       { label: "Talk",  url: "#" },
-    ],
-  },
-  {
-    venue:   "Under Review",
-    title:   "Hyperbolic large language models",
-    authors: [{ name: "Sarang Patil"}, { name: "Zeyong Zhang"}, { name: "Yiran Huang", isMe: true }, { name: "Tengfei Ma"}, { name: "Mengjia Xu"}],
-    topics:  ["llm", "Survey"],
-    award:   "",
-    links: [
-      { label: "Paper", url: "https://arxiv.org/pdf/2509.05757?" },
-      { label: "Code",  url: "#" },
-    ],
-  },
-    {
-    venue:   "Under Review",
-    title:   "RGE-GCN: Recursive Gene Elimination with Graph Convolutional Networks for RNA-seq based Early Cancer Detection",
-    authors: [{ name: "Shreyas Shende"}, { name: "Varsha Narayanan"}, { name: "Vishal Fenn"}, { name: "Yiran Huang", isMe: true }, { name: "Dincer Goksuluk"}, { name: "Gaurav Choudhary"}, { name: "Melih Agraz"}, { name: "Mengjia Xu"}],
-    topics:  ["GNNs", "Differentially Expressed Genes (DEGs)", "RNA-Sequence", "Integrated Gradients (IG)"],
-    award:   "",
-    links: [
-      { label: "Paper", url: "https://arxiv.org/pdf/2512.04333" },
-      { label: "Code",  url: "#" },
     ],
   },
 ];

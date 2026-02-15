@@ -14,13 +14,18 @@ const NEWS = [
   },
   {
     date: "Jan 2026",
-    type: "Conference",
+    type: "conference",
     html: `Our abstract has been accepted to <strong>OHBM 2026</strong>, which will be held in France. We will present our latest work on dynamic functional connectivity and brain connectivity modeling.`,
   },
   {
     date: "Aug 2025",
-    type: "Milestone",
+    type: "mil",
     html: `Successfully passed my Ph.D. Qualifying Exam!`,
+  },
+  {
+    date: "Sep 2024",
+    type: "conference",
+    html: `Presented our poster at the SEG International Exposition and Annual Meeting 2024 in Houston.`,
   },
 ];
 
@@ -29,8 +34,8 @@ document.addEventListener("DOMContentLoaded", () => {
   const list = document.getElementById("news-list");
   if (!list) return;
 
-  const badgeClass = { paper: "badge-paper", award: "badge-award", talk: "badge-talk", misc: "badge-misc" };
-  const badgeLabel = { paper: "Paper", award: "Award", talk: "Talk", misc: "News" };
+  const badgeClass = { mil: "badge-milestone", paper: "badge-paper", award: "badge-award", talk: "badge-talk", conference: "badge-misc" };
+  const badgeLabel = { mil: "Milestone", paper: "Paper", award: "Award", talk: "Talk", conference: "News" };
 
   list.innerHTML = NEWS.map(item => `
     <div class="news-item reveal">
