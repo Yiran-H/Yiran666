@@ -11,7 +11,7 @@ const PROFILE = {
 
   name:       "Yiran Huang",
   initials:   "YH",                        // shown in avatar if no photo
-  photo:      "./{css,js,assets/img}/yiran2.jpeg",                          // e.g. "assets/img/profile.jpg"
+  photo:      "./assets/img/yiran2.jpeg",                          // e.g. "assets/img/profile.jpg"
 
   title:      "Ph.D. Candidate",
   lab:        "NJIT XuLab",
