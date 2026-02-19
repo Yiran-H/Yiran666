@@ -10,12 +10,12 @@ const NEWS = [
   {
     date: "Jan 2026",
     type: "paper",
-    html: `Our full paper has been accepted to <strong>MIDL 2026</strong>, which will be held in Taipei.`,
+    html: `Our full paper has been accepted to <a href="https://2026.midl.io" target="_blank"><strong>MIDL 2026</strong></a>, which will be held in Taipei.`,
   },
   {
     date: "Jan 2026",
     type: "conference",
-    html: `Our abstract has been accepted to <strong>OHBM 2026</strong>, which will be held in France. We will present our latest work on dynamic functional connectivity and brain connectivity modeling.`,
+    html: `Our abstract has been accepted to <a href="https://humanbrainmapping.org/i4a/pages/index.cfm?pageid=4317" target="_blank"><strong>OHBM 2026</strong></a>, which will be held in France. We will present our latest work on dynamic functional connectivity and brain connectivity modeling.`,
   },
   {
     date: "Aug 2025",
