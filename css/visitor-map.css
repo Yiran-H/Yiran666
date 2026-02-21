@@ -1,0 +1,31 @@
+/* Visitor Map Styling */
+.visitor-map-container {
+  display: flex;
+  justify-content: center;
+  padding: 40px 0;
+}
+
+.visitor-map-wrapper {
+  width: 700px;
+  max-width: 90vw;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 212, 255, 0.1);
+  border: 1px solid var(--border);
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .visitor-map-wrapper {
+    width: 600px;
+  }
+}
+
+@media (max-width: 600px) {
+  .visitor-map-wrapper {
+    width: 100%;
+  }
+  .visitor-map-container {
+    padding: 20px 0;
+  }
+}
