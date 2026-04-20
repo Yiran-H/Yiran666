@@ -1,0 +1,24 @@
+# macOS system files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+
+# Thumbnail cache
+ehthumbs.db
+Thumbs.db
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Node modules (if you add any JS build tools later)
+node_modules/
+
+# Python cache (if you add any Python scripts)
+__pycache__/
+*.pyc

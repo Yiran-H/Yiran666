@@ -1,0 +1,66 @@
+/* Service Section */
+.service-content {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.service-category {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 28px 32px;
+  transition: border-color 0.3s;
+}
+
+.service-category:hover {
+  border-color: var(--dim);
+}
+
+.service-cat-title {
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 18px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--border);
+}
+
+.service-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.service-list li {
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.service-list li:last-child {
+  border-bottom: none;
+}
+
+.service-venue {
+  font-size: 0.92rem;
+  color: var(--text);
+}
+
+.service-year {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--muted);
+  letter-spacing: 0.05em;
+}
+
+@media (max-width: 600px) {
+  .service-list li {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+  }
+}
