@@ -8,6 +8,11 @@
 
 const NEWS = [
   {
+    date: "July 2026",
+    type: "talk",
+    html: `Invited to present at the mini-symposium <strong>"AI for Life Sciences"</strong> at <a href="https://www.siam.org/conferences-events/siam-conferences/ls26/" target="_blank">SIAM LS26</a>, Cleveland, Ohio, July 6-9, 2026.`,
+  },
+  {
     date: "Jan 2026",
     type: "paper",
     html: `Our full paper has been accepted to <a href="https://2026.midl.io" target="_blank"><strong>MIDL 2026</strong></a>, which will be held in Taipei.`,
