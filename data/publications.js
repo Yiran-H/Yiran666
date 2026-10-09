@@ -21,8 +21,8 @@ const PUBLICATIONS = [
     ],
   },
   {
-    venue:   "Under Review",
-    title:   "Hyperbolic large language models",
+    venue:   "SIAM Review (Invited Paper)",
+    title:   "Hyperbolic Large Language Models",
     authors: [{ name: "Sarang Patil"}, { name: "Zeyong Zhang"}, { name: "Yiran Huang", isMe: true }, { name: "Tengfei Ma"}, { name: "Mengjia Xu"}],
     topics:  ["llm", "Survey"],
     award:   "",

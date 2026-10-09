@@ -8,6 +8,11 @@
 
 const NEWS = [
   {
+    date: "Oct 2026",
+    type: "paper",
+    html: `Our paper <strong>"Brain-Aligned Multimodal LLMs for Social and Emotional Understanding of Cartoon Movies"</strong> has been accepted to the <a href="https://wi-consortium.org/conferences/bi2026/workshops%20special%20sessions.html" target="_blank">GenAI for Neuroscience workshop</a> at <strong>Brain Informatics 2026</strong>.`,
+  },
+  {
     date: "July 2026",
     type: "talk",
     html: `Invited to present at the mini-symposium <strong>"AI for Life Sciences"</strong> at <a href="https://www.siam.org/conferences-events/siam-conferences/ls26/" target="_blank">SIAM LS26</a>, Cleveland, Ohio, July 6-9, 2026.`,
