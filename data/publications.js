@@ -3,12 +3,22 @@
  * ─────────────────────────────────────────────────
  *  Add your papers here.
  *  topics: array of strings used for filtering.
- *    Available filter keys: "llm", "safety", "nlp"
+ *    Available filter keys: "llm", "fmri"
  *    (add more filter buttons in index.html to match)
  * ─────────────────────────────────────────────────
  */
 
 const PUBLICATIONS = [
+  {
+    venue:   "Brain Informatics 2026 · GenAI for Neuroscience Workshop",
+    title:   "Brain-Aligned Multimodal LLMs for Social and Emotional Understanding of Cartoon Movies",
+    authors: [{ name: "Yiran Huang", isMe: true }, { name: "Zeyong Zhang" }, { name: "Bharat Biswal" }, { name: "Xin Di" }, { name: "Mengjia Xu" }],
+    topics:  ["llm", "fmri", "Multimodal LLMs", "Naturalistic Movie-Watching"],
+    award:   "",
+    links: [
+      { label: "Paper", url: "https://arxiv.org/abs/2610.22706" },
+    ],
+  },
   {
     venue:   "Under Review",
     title:   "RGE-GCN: Recursive Gene Elimination with Graph Convolutional Networks for RNA-seq based Early Cancer Detection",
@@ -35,7 +45,7 @@ const PUBLICATIONS = [
     venue:   "MIDL 2026",
     title:   "BrainATCL: Adaptive Temporal Brain Connectivity Learning for Functional Link Prediction and Age Estimation",
     authors: [{ name: "Yiran Huang", isMe: true }, { name: "Amirhossein Nouranizadeh" }, { name: "Christine Ahrends" }, { name: "Mengjia Xu" }],
-    topics:  ["dFC", "rs-fMRI", "Mamba", "GNNs"],
+    topics:  ["fmri", "dFC", "rs-fMRI", "Mamba", "GNNs"],
     // award:   "🏆 Spotlight",
     award:   "",
     links: [
@@ -70,8 +80,8 @@ const PUBLICATIONS = [
   },
   {
     venue:   "IJCNN 2024",
-    title:   "Mechanistic Interpretability of Attention Heads in Transformer Language Models",
-    authors: [{ name: "Chuang Pan" }, { name: "Yiran Huang", isMe: true }, { name: "Qingzhen Wang" }, { name: "Jun Li," }, { name: "Jianhua Xu" }],
+    title:   "Two-dimensional seismic velocity inversion via enhanced multi-view convolutional neural networks for regression",
+    authors: [{ name: "Chuang Pan" }, { name: "Yiran Huang", isMe: true }, { name: "Qingzhen Wang" }, { name: "Jun Li" }, { name: "Jianhua Xu" }],
     topics:  ["velocity inversion", "multi-view convolutional neural network"],
     award:   "",
     links: [
