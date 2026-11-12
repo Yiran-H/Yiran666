@@ -10,6 +10,16 @@
 
 const PUBLICATIONS = [
   {
+    venue:   "arXiv Preprint",
+    title:   "Human and Machine Annotations Predict Brain Responses to Naturalistic Movies Across Development",
+    authors: [{ name: "Yiran Huang", isMe: true }, { name: "Zeyong Zhang" }, { name: "Rounak Rahman" }, { name: "Bharat Biswal" }, { name: "Xin Di" }, { name: "Mengjia Xu" }],
+    topics:  ["llm", "fmri", "Multimodal LLMs", "Naturalistic Movie-Watching"],
+    award:   "",
+    links: [
+      { label: "Paper", url: "https://arxiv.org/abs/2611.13637" },
+    ],
+  },
+  {
     venue:   "Brain Informatics 2026 · GenAI for Neuroscience Workshop",
     title:   "Brain-Aligned Multimodal LLMs for Social and Emotional Understanding of Cartoon Movies",
     authors: [{ name: "Yiran Huang", isMe: true }, { name: "Zeyong Zhang" }, { name: "Bharat Biswal" }, { name: "Xin Di" }, { name: "Mengjia Xu" }],
