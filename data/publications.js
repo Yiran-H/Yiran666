@@ -10,7 +10,7 @@
 
 const PUBLICATIONS = [
   {
-    venue:   "arXiv Preprint",
+    venue:   "arXiv Preprint · Under Review",
     title:   "Human and Machine Annotations Predict Brain Responses to Naturalistic Movies Across Development",
     authors: [{ name: "Yiran Huang", isMe: true }, { name: "Zeyong Zhang" }, { name: "Rounak Rahman" }, { name: "Bharat Biswal" }, { name: "Xin Di" }, { name: "Mengjia Xu" }],
     topics:  ["llm", "fmri", "Multimodal LLMs", "Naturalistic Movie-Watching"],
