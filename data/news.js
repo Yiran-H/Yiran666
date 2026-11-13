@@ -8,6 +8,11 @@
 
 const NEWS = [
   {
+    date: "Nov 2026",
+    type: "mil",
+    html: `Successfully passed my Ph.D. Dissertation Proposal Defense!`,
+  },
+  {
     date: "Oct 2026",
     type: "paper",
     html: `Our paper <strong>"Brain-Aligned Multimodal LLMs for Social and Emotional Understanding of Cartoon Movies"</strong> has been accepted to the <a href="https://wi-consortium.org/conferences/bi2026/workshops%20special%20sessions.html" target="_blank">GenAI for Neuroscience workshop</a> at <strong>Brain Informatics 2026</strong>, which will be held in Brisbane, Queensland, Australia, December 3-6, 2026.`,
