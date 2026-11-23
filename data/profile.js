@@ -62,9 +62,9 @@ const PROFILE = {
   ],
 
   cv: {
-    path:        "assets/cv.pdf",
-    updated:     "January 2025",
-    pages:       "~2 pages",
+    path:        "assets/CV_Yiran%20Huang.pdf",
+    updated:     "November 2026",
+    pages:       "2 pages",
   },
 
 };
